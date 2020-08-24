@@ -1,0 +1,79 @@
+body
+{
+	background:-webkit-linear-gradient(5deg, blue,red,yellow );
+	
+}
+
+
+
+
+article
+{
+	font-family:Bodoni MT Condensed;
+	font-size:85px;
+	font-weight:normal;
+	border: 5px solid blue;
+	text-align:center;
+	padding: 20px;
+	margin-right: 50px;
+	margin-bottom:10px;
+	margin-left: 50px;
+	background-color:#5DC053;
+	color:white;
+	border-radius:15px;
+	box-shadow:15px 12px 9px  white;
+	background:linear-gradient(30deg,#E65100,black);
+}
+nav
+ {
+	 font-family:Bodoni MT Condensed;
+	font-size:25px;
+	font-weight:normal;
+	border: 5px solid blue;
+	text-align:center;
+	padding: 20px;
+	margin-right: 1000px;
+	margin-top:30px;
+	margin-bottom:10px;
+	margin-left: 50px;
+	background-color:#5DC053;
+	color:white;
+	border-radius:20px;
+	box-shadow:15px 12px 9px  white;
+ background:linear-gradient(30deg,#E65100,black );
+ position:absolute;
+ bottom:8px;
+
+}
+
+.vers
+{
+	text-align:right;
+	color:#FFFFFF;
+	font-family:Cooper Black;
+	font-size:45px;
+	margin-top:20 px;
+	margin-bottom:160px;
+	margin-left:800px;
+	margin-right:700px;
+	position:absolute;
+	bottom:-200px;
+
+	
+}
+.pied
+{
+font-family:Bodoni MT Condensed;
+	font-size:50px;
+	border: 5px solid blue;
+	text-align:center;
+	padding: 0px;
+	margin-right: 50px;
+	margin-top:700px;
+	margin-left: 50px;
+	background-color:#5DC053;
+	color:white;
+	border-radius:15px;
+	box-shadow:15px 12px 9px white;
+	background:linear-gradient(30deg,#E65100,black);	
+}

@@ -1,0 +1,22 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	///background:linear-gradient(-100deg, blue,yellow);
+}
+h1
+{
+	font-family:Bodoni MT Condensed;
+	font-size:70px;
+	font-weight:normal;
+	border: 5px solid blue;
+	text-align:center;
+	padding: 20px;
+	margin-right: 50px;
+	margin-bottom:10px;
+	margin-left: 50px;
+	background-color:white;
+	color:black;
+	border-radius:15px;
+	box-shadow:15px 12px 9px  black;
+}

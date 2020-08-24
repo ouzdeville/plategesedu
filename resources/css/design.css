@@ -1,0 +1,94 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background:linear-gradient(-180deg, blue,white);
+}
+}
+nav
+ {
+    font-family:Bodoni MT Condensed;
+	font-size:30px;
+		border: 5px solid white;
+	font-weight:normal;
+	text-align:center;
+	padding:20px;
+	margin-right: 230px;
+	position:absolute;
+	top:300px; 
+	margin-top:-8px;
+	margin-bottom:720px;
+	margin-left: 45px;
+	color:white;
+	border-radius:20px;
+	box-shadow:15px 12px 9px  white;
+  
+
+}
+form
+{
+
+	 font-family:Bodoni MT Condensed;
+	font-size:30px;
+		border: 5px solid white;
+	font-weight:normal;
+	text-align:center;
+	padding:20px;
+	margin-right: 230px;
+	position:absolute;
+	top:317px; 
+	margin-top:-0px;
+	margin-bottom:1000px;
+	margin-left: 45px;
+	color:white;
+	border-radius:20px;
+	box-shadow:15px 12px 9px  white;
+ 
+	
+} 
+ section 
+{ 
+	padding:21px;
+	margin-right: 80px;
+	position:absolute;
+	bottom:13px;
+	margin-top:-20px;
+	margin-bottom:330px;
+	margin-left:-30px;
+
+} 
+	ul
+	{
+		 font-family:Bodoni MT Condensed;
+	font-size:40px;
+	font-weight:normal;
+	text-align:center;
+	padding:20px;
+	margin-right: 230px;
+	position:absolute;
+	top:300px; 
+	margin-top:60px;
+	margin-bottom:720px;
+	margin-left: 45px;
+	color:white;
+	border: 2px solid red;
+	box-shadow:12px 8px 6px  red;
+
+	} 
+
+ { 
+	 font-family:Bodoni MT Condensed;
+	font-size:30px;
+		border: 5px solid white;
+	font-weight:normal;
+	text-align:center;
+	padding:10px;
+	margin-right: 600px;
+	position:absolute;
+	top:300px; 
+	margin-top:-280px;
+	margin-bottom:720px;
+	margin-left: 8px;
+	color:white;
+	border-radius:20px;
+	box-shadow:15px 12px 9px  white;

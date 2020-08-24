@@ -1,11 +1,20 @@
-<?php
- include ("connexionpod.php");
- ?>
- <?php
- include ("index.php");
- ?> 
-<div style="width:400px; margin:auto">
-<form action="veriflog.php" method="post">
+<html>
+
+<head>
+    <title>Plateforme ESSA</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/essa.css" />
+</head>
+
+<body>
+<div class="header">
+    <img class="logo" src="./resources/images/ESSA.PNG" height="110" width="180" />
+    BIENVENUE A L'ECOLE SUPERIEURE DES SCIENCES APPLIQUEES E.S.S.A
+    
+    <img class="logo" src="./resources/images/CAMES.PNG" height="110" width="180" />
+</div>
+<form class="auth" action="veriflog.php" method="post">
 					<?php
 					 if(isset($_GET["info"])){
 							echo  $_GET["info"];
@@ -34,8 +43,6 @@
                     </br>								
 					<button  type="submit" class="btn btn-warning">VALIDER</button>	
 				</form>
-				</div>
-			<footer class="c">www.essa.com</footer>
 	</body>
 	</html>
 				

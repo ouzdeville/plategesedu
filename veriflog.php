@@ -26,7 +26,7 @@ if(isset($_POST['Login']) && isset($_POST['Password']))
 			 $_SESSION['Login'] = $Login;
 			  $_SESSION['id'] =  $reponse['ID'];
 			    $_SESSION['profil'] =  "etudiant";
-			 header('Location: acceuiletu.php');
+			 header('Location: ./etudiant/acceuiletu.php');
 		 }
 		 else
 		 {
@@ -46,7 +46,7 @@ if(isset($_POST['Login']) && isset($_POST['Password']))
 			 $_SESSION['Login'] = $Login;
 			 $_SESSION['id'] =  $reponse['ID_PROF'];
 			    $_SESSION['profil'] =  "prof";
-			 header('Location: acceuilprof.php');
+			 header('Location: ./prof/acceuilprof.php');
 		 }
 		 else
 		 {
@@ -68,7 +68,7 @@ if(isset($_POST['Login']) && isset($_POST['Password']))
 			 $_SESSION['Login'] = $Login;
 			  $_SESSION['id'] =  $reponse['id_admin'];
 			    $_SESSION['profil'] =  "secretaire";
-			 header('Location: acceuilsec.php');
+			 header('Location: ./secretaire/acceuilsec.php');
 		 }
 		 else
 		 {

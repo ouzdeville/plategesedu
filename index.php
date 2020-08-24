@@ -3,41 +3,16 @@
 <head>
     <title>Plateforme ESSA</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="essa.css" />
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/essa.css" />
 </head>
 
 <body>
-
-    <div class="header">
-    <img class="logo" src="ESSA.PNG" height="110" width="180" />
-    BIENVENUE A L'ECOLE SUPERIEURE DES SCIENCES APPLIQUEES E.S.S.A
+<?php
+ include ("header.php");
+ ?>
     
-    <img class="logo" src="CAMES.PNG" height="110" width="180" />
-    </div>
-    <section class="menu">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="#">A PROPOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">ACTUALITES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="notifs.php">NOTIFICATIONS</a>
-            </li class="nav-item">
-            <a class="nav-link" href="contact.php">FORMATIONS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTS</a>
-            </li <li class="nav-item">
-            <a class="nav-link disabled" href="connexin.php" tabindex="-1" aria-disabled="true">CONNEXION</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="connexin.php">DECONNEXION</a>
-            </li </ul>
-    </section>
-    <section class="pic">
+    <section class="content1">
         <marquee bgcolor="blue">
             <img src="ESSA.PNG" height="150" width="250" />
             <img src="CAMES.PNG" height="150" width="250" />
