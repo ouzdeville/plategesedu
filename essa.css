@@ -1,25 +1,46 @@
 body
 {
-	margin:0px;
-	padding:0px;
+	margin-right: 10%;
+	margin-left:10%;
+	width: 80%;
 	background-image:url(images/LOG.png);
-	///background:linear-gradient(-100deg, blue,yellow);
+	/*background:linear-gradient(-100deg, blue,yellow);*/
 }
-h1
+.header
 {
 	font-family:Bodoni MT Condensed;
-	font-size:60px;
+	font-size:25px;
 	font-weight:normal;
 	border: 5px solid blue;
 	text-align:center;
 	padding: 20px;
-	margin-right: 50px;
 	margin-bottom:10px;
-	margin-left: 50px;
 	background-color:white;
 	color:black;
 	border-radius:15px;
 	box-shadow:15px 12px 9px  black;
+	width: 100%;
+}
+.logo
+{
+	border: 5px solid blue;
+	display: inline-block;
+	text-align:center;
+	margin-left:10px;
+	
+}
+
+.menu
+{
+	font-family:Time New Roman; 
+	font-weight:normal;
+	text-align:center;
+	padding: 10px;
+	margin-right: 50px;
+	margin-bottom:60px;
+	margin-left: 90px;
+	background-color:white;
+	color:black;
 }
 h2
 {
@@ -34,7 +55,6 @@ h2
 	background-color:white;
 	color:blue;
 	border-radius:15px;
-}
 }
 nav
  {
@@ -76,22 +96,7 @@ form
 	border-radius:20px;
 	box-shadow:15px 12px 9px  black;
 }
-     .a
-{
-	border: 5px solid blue;
-	text-align:center;
-	padding: 20px;
-	margin-right: 20px;
-	position:absolute;
-	bottom:13px;
-	margin-top:-400px;
-	margin-bottom:350px;
-	margin-left:70px;
-	background-color:white;
-	color:white;
-	border-radius:10px;
-	box-shadow:15px 12px 9px  black;
-}
+
 .b
 {
 	border: 5px solid blue;
@@ -405,20 +410,7 @@ font-family:Bodoni MT Condensed;
 	color:black;
 	border-radius:15px;		
 }
-.no
-{
-	font-family:Time New Roman; 
-	font-size:21px;
-	font-weight:normal;
-	text-align:center;
-	padding: 10px;
-	margin-right: 50px;
-	margin-bottom:60px;
-	margin-top:170px;
-	margin-left: 90px;
-	background-color:white;
-	color:black;
-}
+
 .
 {
 	 font-family:Hobo std;
