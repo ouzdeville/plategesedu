@@ -19,7 +19,7 @@ $id=$_SESSION['id'] ;
 $profil= $_SESSION['profil'];
 $annee=$_GET["annee"];
 $semestre=$_GET["semestre"];
-if ($profil=! 'secretaire') header("Location:../connexin.php");
+if (strcmp($profil,'etudiant')!=0) header("Location:../connexin.php");
 $requete="select  * from niveau  WHERE ID_NIV='".$_GET["idniv"]."'";
 $resultat=$connexion->query($requete);
 
@@ -40,19 +40,20 @@ $resultat=$connexion->query($requete);
 $requete="select  m.*, matieres.* from niveau n
 INNER JOIN promo ON promo.ID_NIV = n.ID_NIV
 INNER JOIN matierepromo m ON promo.ID_PROMO = m.ID_PROMO
+INNER JOIN etudiantpromo ep ON ep.IDPROMO = promo.ID_PROMO
 INNER JOIN matieres  ON matieres.ID_MAT = m.ID_MAT
-WHERE promo.ID_PROMO = '".$_GET["ID_PROMO"]."' AND m.ID_SEMESTRE='".$semestre."'";
+WHERE promo.ID_PROMO = '".$_GET["ID_PROMO"]."' AND ep.ID = '".$id."' AND m.ID_SEMESTRE='".$semestre."'";
 //echo $requete;
 $resultat=$connexion->query($requete);
 foreach($resultat as $row) {
 ?>
- <a href="matiereprof.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
+ <a href="matiereetudiant.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
  <a  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Etudiants</a>
   </section>
  <section class="g">
  <ul>
- <li><a href="acceuilsec.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
+ <li><a href="acceuiletu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
  </ul>
  </section>
 </body>

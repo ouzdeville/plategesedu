@@ -27,7 +27,7 @@ if($mois >=10 && $mois<=12){
 }
 
 
-if ($profil=! 'prof') header("Location:connexin.php");
+if ($profil=! 'prof') header("Location:../connexin.php");
  ?>
   <h2> ANNEE SCOLAIRE <?php	echo $annee ?></h2>
 <section class="t">
