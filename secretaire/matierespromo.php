@@ -32,15 +32,17 @@ $resultat=$connexion->query($requete);
   
    ?>
    <h2>  <?php	echo "Semestre ".$_GET["semestre"]?></h2>
+   <a href="acceuilsec.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AJOUTER MATIERES</a><br/>
 <section class="content1">
 <?php
  
 
 
-$requete="select  m.*, matieres.* from niveau n
+$requete="select  m.*, matieres.*, profs.* from niveau n 
 INNER JOIN promo ON promo.ID_NIV = n.ID_NIV
 INNER JOIN matierepromo m ON promo.ID_PROMO = m.ID_PROMO
 INNER JOIN matieres  ON matieres.ID_MAT = m.ID_MAT
+INNER JOIN profs  ON profs.ID_PROF = m.ID_PROF
 WHERE promo.ID_PROMO = '".$_GET["ID_PROMO"]."' AND m.ID_SEMESTRE='".$semestre."'";
 //echo $requete;
 $resultat=$connexion->query($requete);
@@ -48,8 +50,13 @@ foreach($resultat as $row) {
 ?>
  <a href="matiereprof.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
- <a  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Etudiants</a>
-   <a  href="matierespromo.php?ID_PROMO=<?php echo $_GET["ID_PROMO"] ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?> "  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Matières Promo</a>
+
+
+
+
+
+
+
   </section>
  <section class="g">
  <ul>
