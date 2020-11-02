@@ -21,7 +21,7 @@ values ('".$_POST['Nom']."','".$_POST['Prenom']."','".$_POST['Login']."','".$_PO
 header('Location: http://127.0.0.1:80/plategesedu/inscription.php');
 $connexion->exec($requete);
 }
-
+echo"Votre requête a été bien prise en compte";
 }catch (Exception $e){
 	die('Erreur : ' . $e->getMessage());
 }?>

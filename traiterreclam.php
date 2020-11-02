@@ -21,7 +21,8 @@ values ('".$_POST['Nom']."','".$_POST['Prenom']."','".$_POST['Login']."','".$_PO
 header('Location: http://127.0.0.1:80/plategesedu/inscription.php');
 $connexion->exec($requete);
 }
-echo"Bonjour la note a été modifier avec succès.";
+echo"Bonjour votre requête a été bien prise en compte. 
+Merci et bonne chance";
 }catch (Exception $e){
 	die('Erreur : ' . $e->getMessage());
 }?>

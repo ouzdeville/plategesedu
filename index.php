@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="./resources/css/essa.css" />
 </head>
-
 <body>
 <?php
  include ("header.php");
- ?>
-    
+ ?> 
     <section class="content1">
         <marquee bgcolor="blue">
             <img src="ESSA.PNG" height="150" width="250" />
