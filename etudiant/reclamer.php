@@ -1,15 +1,5 @@
-<html>
-             <head>
-			 <title>Plateforme ESSA</title>
-			  <h1 class="v">VOUS ÊTES DANS LA PAGE DE RECLAMATION DES ETUDIANTS DE E.S.S.A</h1>
-			 <meta charset="UTF-8"/>
-			 <meta charset="UTF-8"/>
-			  <link rel="stylesheet" href="bootstrap.min.css">
-			 </head>
-        <body>
-		<img class="a" src="ESSA.PNG" height="110" width="180"/>
-		<img class="b" src="CAMES.PNG" height="110" width="180"/>
- <link rel="stylesheet" href="essa.css"/>
+<link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
 <?php
 try
 {
@@ -21,7 +11,7 @@ try
                  	</div>  
 					<div class="col"> 
 					<label class="grey" for="username">Entrez La Note :</label>
-					<input class="form-control" type="text" name="Id" id="username" value="" size="23" />
+					<input class="form-control" type="text" name="Id" id="username" required value="" size="23" />
 					</div>
 					<br>
 					<div class="col"> 

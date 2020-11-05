@@ -2,7 +2,6 @@
  include ("../connexionpod.php");
  ?>
  <html>
-
 <head>
     <title>Plateforme ESSA</title>
     <meta charset="UTF-8" />
@@ -32,7 +31,6 @@ $resultat=$connexion->query($requete);
   
    ?>
    <h2>  <?php	echo "Semestre ".$_GET["semestre"]?></h2>
-   <a href="ajoutmat.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AJOUTER MATIERES</a><br/>
 <section class="content1">
 <?php
  
@@ -50,37 +48,11 @@ foreach($resultat as $row) {
 ?>
  <a href="matiereprof.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
-<head>
-    <title>Liste des professeurs de ESSA</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../resources/css/essa.css" />
-</head>
-<body>
-<table>
- <tr>
- <td>Nom</td>
-  <td>Prenom</td>
- <td>Tel</td>
- <td> </td>
-
- </tr>
- <tr>
- <td>NDIAYE</td>
- <td> Ousmane</td>
- <td>776359893</td>
- <td></td>
  
- </tr>
- </table>
- </body>
-
-
-
-
   </section>
  <section class="g">
  <ul>
+   <li> <a href="ajoutmat.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AJOUTER MATIERES</a><br/></li>
  <li><a href="acceuilsec.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
  </ul>
  </section>

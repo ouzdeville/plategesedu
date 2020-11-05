@@ -46,7 +46,7 @@ foreach($resultat as $row) {
  <section class="g">
  <ul>
  <li><a href="creerev.php?idmatierepromo=<?php echo $_GET["idmatierepromo"] ?>&NOM=<?php	echo $_GET["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="#" role="button" aria-pressed="true">CREER UNE EVALUATION</a></li>
- <li><a href="acceuilprof.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
+ <li><a href="acceuilsec.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
  <li><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">EMARGER SVP</a></li>
  </ul>
  </section>
