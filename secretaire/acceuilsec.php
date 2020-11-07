@@ -39,7 +39,7 @@ WHERE promo.ANNEE = '".$annee."' ORDER BY n.NOM";
 $resultat=$connexion->query($requete);
 foreach($resultat as $row) {
 ?>
- <a href="promo.php?ID_PROMO=<?php echo $row["ID_PROMO"] ?>&idniv=<?php echo $row["ID_NIV"] ?>&annee=<?php	echo $annee ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></a>
+ <a href="promo.php?ID_PROMO=<?php echo $row["id_PROMO"] ?>&idniv=<?php echo $row["ID_NIV"] ?>&annee=<?php	echo $annee ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></a>
  <?php	} ?>
   </section>
 <?php 

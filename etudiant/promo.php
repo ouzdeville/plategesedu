@@ -28,8 +28,8 @@ $resultat=$connexion->query($requete);
    ?>
  
 <section class="x">
- <a href="matieresemestreetudiant.php?ID_PROMO=<?php echo $_GET["ID_PROMO"] ?>&semestre=1&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SEMESTRE 1 </a>
-  <a href="matieresemestreetudiant.php?ID_PROMO=<?php echo $_GET["ID_PROMO"] ?>&semestre=2&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SEMESTRE 2</a>
+ <a href="matieresemestreetudiant.php?ID_PROMO=<?php echo $_GET["id_PROMO"] ?>&semestre=1&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SEMESTRE 1 </a>
+  <a href="matieresemestreetudiant.php?ID_PROMO=<?php echo $_GET["id_PROMO"] ?>&semestre=2&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SEMESTRE 2</a>
  <a href="listetu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Etudiant</a>
 </section>
  <section class="r">

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 14 août 2020 à 16:53
--- Version du serveur :  10.4.11-MariaDB
--- Version de PHP :  7.2.26
+-- Généré le : jeu. 29 oct. 2020 à 12:22
+-- Version du serveur :  10.4.14-MariaDB
+-- Version de PHP : 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `plategesedu`
+-- Base de données : `plategesedu`
 --
 
 -- --------------------------------------------------------
@@ -538,37 +537,6 @@ ALTER TABLE `appartenir`
 ALTER TABLE `association`
   MODIFY `ID_NIV` int(15) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `etudiant`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
-ALTER TABLE `etudiantpromo`
-  MODIFY `ID_ETUPRO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-  ALTER TABLE `evaluation`
-  MODIFY `ID_EVE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-  
-  ALTER TABLE `matierepromo`
-  MODIFY `id_MPRO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-  
-  ALTER TABLE `matieres`
-  MODIFY `id_MAT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-  
-  ALTER TABLE `niveau`
-  MODIFY `id_NIV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-  
-  ALTER TABLE `notes`
-  MODIFY `id_NOT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-  
-  ALTER TABLE `profs`
-  MODIFY `id_PROF` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-  
-  ALTER TABLE `promo`
-  MODIFY `id_PROMO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-  
-  ALTER TABLE `reclamation`
-  MODIFY `id_REC` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-  
-  ALTER TABLE `semestre`
-  MODIFY `id_SEMESTRE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Contraintes pour les tables déchargées
 --
@@ -612,8 +580,8 @@ ALTER TABLE `notes`
 --
 -- Contraintes pour la table `promo`
 --
-
- ALTER TABLE `promo`
+ALTER TABLE `promo`
+  ADD CONSTRAINT `FK_ASSOCIER` FOREIGN KEY (`ID_EMP`) REFERENCES `emploidutemps` (`ID_EMP`),
   ADD CONSTRAINT `promo_ibfk_1` FOREIGN KEY (`ID_NIV`) REFERENCES `niveau` (`ID_NIV`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --

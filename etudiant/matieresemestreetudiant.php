@@ -20,7 +20,7 @@ $profil= $_SESSION['profil'];
 $annee=$_GET["annee"];
 $semestre=$_GET["semestre"];
 if (strcmp($profil,'etudiant')!=0) header("Location:../connexin.php");
-$requete="select  * from niveau  WHERE ID_NIV='".$_GET["idniv"]."'";
+$requete="select  * from niveau  WHERE id_NIV='".$_GET["id_NIV"]."'";
 $resultat=$connexion->query($requete);
 
  ?>
@@ -38,16 +38,16 @@ $resultat=$connexion->query($requete);
 
 
 $requete="select  m.*, matieres.* from niveau n
-INNER JOIN promo ON promo.ID_NIV = n.ID_NIV
-INNER JOIN matierepromo m ON promo.ID_PROMO = m.ID_PROMO
-INNER JOIN etudiantpromo ep ON ep.IDPROMO = promo.ID_PROMO
-INNER JOIN matieres  ON matieres.ID_MAT = m.ID_MAT
-WHERE promo.ID_PROMO = '".$_GET["ID_PROMO"]."' AND ep.ID = '".$id."' AND m.ID_SEMESTRE='".$semestre."'";
+INNER JOIN promo ON promo.id_NIV = n.id_NIV
+INNER JOIN matierepromo m ON promo.id_PROMO = m.id_PROMO
+INNER JOIN etudiantpromo ep ON ep.id_PROMO = promo.id_PROMO
+INNER JOIN matieres  ON matieres.id_MAT = m.id_MAT
+WHERE promo.id_PROMO = '".$_GET["id_PROMO"]."' AND ep.ID = '".$id."' AND m.ID_SEMESTRE='".$semestre."'";
 //echo $requete;
 $resultat=$connexion->query($requete);
 foreach($resultat as $row) {
 ?>
- <a href="matiereetudiant.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
+ <a href="matiereetudiant.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["id_NIV"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
 
   </section>

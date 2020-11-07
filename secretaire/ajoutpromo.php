@@ -28,7 +28,7 @@ $requete="select * from niveau  ORDER BY NOM";
 $resultat=$connexion->query($requete);
 foreach($resultat as $row) {
 ?>
-<option value="<?php echo $row["ID_NIV"] ?>" > <?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></option>
+<option value="<?php echo $row["id_NIV"] ?>" > <?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></option>
  
  <?php	} ?>
 					</select>

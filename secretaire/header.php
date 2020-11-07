@@ -1,7 +1,6 @@
 
 <div class="header">
     <img class="logo" src="../resources/images/ESSA.PNG" height="110" width="180" />
- html>
 <head>
     <title>Plateforme ESSA</title>
     <meta charset="UTF-8" />
@@ -22,7 +21,7 @@
                 <a class="nav-link" href="../">ACTUALITES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../notifs.php">NOTIFICATIONS</a>
+                <a class="nav-link" href="../info.pdf">NOTIFICATIONS</a>
             </li class="nav-item">
             <a class="nav-link" href="../aproposessa.php">FORMATIONS</a>
             </li>
