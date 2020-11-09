@@ -47,7 +47,7 @@ WHERE promo.ID_PROMO = '".$_GET["ID_PROMO"]."' AND m.ID_PROF = '".$id."' AND m.I
 $resultat=$connexion->query($requete);
 foreach($resultat as $row) {
 ?>
- <a href="matiereprof.php?idmatierepromo=<?php echo $row["ID_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
+ <a href="matiereprof.php?idmatierepromo=<?php echo $row["id_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
   </section>
  <section class="g">

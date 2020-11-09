@@ -16,6 +16,7 @@
  ?>
 <?php 
 $id=$_SESSION['id'] ;
+//echo $id;
 $profil= $_SESSION['profil'];
 $annee=date("Y");
 $mois=date('m');
@@ -39,9 +40,10 @@ INNER JOIN profs ON profs.ID_PROF = m.ID_PROF
 WHERE promo.ANNEE = '".$annee."' AND m.ID_PROF = '".$id."'";
 
 $resultat=$connexion->query($requete);
+
 foreach($resultat as $row) {
 ?>
- <a href="promo.php?ID_PROMO=<?php echo $row["ID_PROMO"] ?>&idniv=<?php echo $row["ID_NIV"] ?>&annee=<?php	echo $annee ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></a>
+ <a href="promo.php?ID_PROMO=<?php echo $row["id_PROMO"] ?>&idniv=<?php echo $row["ID_NIV"] ?>&annee=<?php	echo $annee ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"] ."/".$row["FILIERE"] ?></a>
  <?php	} ?>
   </section>
  <section class="g">
