@@ -1,6 +1,7 @@
 <?php
  include ("../connexionpod.php");
- ?><html>
+ ?>
+ <html>
 
 <head>
     <title>Plateforme ESSA</title>

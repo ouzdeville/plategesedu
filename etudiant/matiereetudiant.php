@@ -46,7 +46,6 @@ foreach($resultat as $row) {
   </section>
  <section class="g">
  <ul>
- <li><a href="../notifs.php" class="#" role="button" aria-pressed="true">VOIR NOTIFS</a></li>
  <li><a href="acceuiletu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
  </ul>
  </section>

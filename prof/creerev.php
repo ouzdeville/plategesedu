@@ -18,13 +18,13 @@
 
     <h2> <?php	echo $_GET["NOM"] ."/"."Semestre ".$_GET["semestre"]?></h2>
     <section class="evalutation">
-        <form action="traiterevaluation.php" method="post">
+        <form action="creerevaction.php" method="post">
             <input type="hidden" name="idmatierepromo" value="<?php echo $_GET["idmatierepromo"] ?>" />
             <div class="row">
             </div>
             <div class="col">
-			<label class="grey" for="type">Type:</label>
-                <select name="type" required="required" id="type">
+			<label class="grey" for="TYPE">Type:</label>
+                <select name="TYPE" required="required" id="type">
                     <option></option>
                     <option value="Devoir">Devoir</option>
                     <option value="Examen">Examen</option>
@@ -33,12 +33,12 @@
             </div>
             <div class="col">
                 <label class="grey" for="username">Entrez La Date D'Evaluation:</label>
-                <input required="required" class="form-control" type="date" name="date" id="username" value="" size="23" />
+                <input required="required" class="form-control" type="DATE" name="DATE" id="username" value="" size="23" />
             </div>
             <div>
                 <div class="col">
                     <div><label class="grey" for="desc">Description:</label></div>
-                    <TEXTAREA required="required" id="desc" name="nom" rows=4 cols=40>Cette évaluation portera sur ...
+                    <TEXTAREA required="required" id="desc" name="DESCRIPTION" rows=4 cols=40>Cet évaluation concerne 
 					</TEXTAREA>
                 </div>
             </div>

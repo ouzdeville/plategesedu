@@ -28,6 +28,10 @@ try
 					<input class="form-control" type="text" name="login" id="username" value="" size="100" />
 					</div>
 					<div class="col"> 
+					<label class="grey" for="username">Entrez son Adresse:</label>
+					<input class="form-control" type="text" name="adresse" id="username" value="" size="100" />
+					</div>
+					<div class="col"> 
 					<label class="grey" for="username">Entrez son numero Tel:</label>
 					<input class="form-control" type="text" name="tel" id="tel" value="" size="100" />
 					</div>

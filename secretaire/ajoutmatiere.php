@@ -16,8 +16,8 @@ try
                     <div class="row">
                  	<div>  
 					<div class="col"> 
-					<label class="grey" for="username">Entrez le nom de la matière :</label>
-					<input class="form-control" type="text" name="matiere" id="matiere" value="" size="100" />
+					<label class="grey" for="matière">Entrez le nom de la matière :</label>
+					<input class="form-control" type="text" name="nom" id="nom" value="" size="100" />
 					</div>
 					<div>
 					<br>

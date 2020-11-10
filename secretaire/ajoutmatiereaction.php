@@ -1,16 +1,13 @@
 <?php
 
  include ("../connexionpod.php");
- $id_MAT=$_POST["id_MAT"];
-
-  $requete="INSERT INTO `matieres`(`id_MAT`, `NOM`) VALUES ($id_MAT,$NOM)";
+  //$id_promo=$_POST["id_promo"];
+  $requete="insert into matieres (NOM) 
+  values ('".$_POST['nom']."')";
 $resultat=$connexion->query($requete);
-echo $requete;
-die('Erreur : ' . $e->getMessage());
+//echo $requete;
+
  header("Location:acceuilsec.php");
-
-
-
 
 
 

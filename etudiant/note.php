@@ -81,6 +81,6 @@
         <div>
         </div>
     </form>
-	<li><a href="reclamer.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RECLAMATION</a></li>
+	<li><a href="reclameraction.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RECLAMATION</a></li>
 
     </div>
