@@ -31,8 +31,9 @@
                     <option value="Autre">Autre</option>
                 </select>
             </div>
-            <div class="col">
-                <label class="grey" for="username">Entrez La Date D'Evaluation:</label>
+            
+			 <div class="col">
+                <label class="grey" for="username">Entrez la date d'évaluation:</label>
                 <input required="required" class="form-control" type="DATE" name="DATE" id="username" value="" size="23" />
             </div>
             <div>
