@@ -10,13 +10,17 @@ try
                     <div class="row">
                  	</div>  
 					<div class="col"> 
-					<label class="grey" for="username">Entrez La Note :</label>
+					<label class="grey" for="username">Entrez L'id de la reclameraction:</label>
+					<input class="form-control" type="int" name="id_REC" id="id_REC" required value="" size="23" />
+					</div>
+					<div class="col"> 
+					<label class="grey" for="username">Entrez L'id de la note:</label>
 					<input class="form-control" type="int" name="ID_NOT" id="ID_NOT" required value="" size="23" />
 					</div>
 					<br>
 					<div class="col"> 
-						<div><label class="grey" for="motif">Renseigner Le Motif De Votre Réclamation:</label></div>
-                      <TEXTAREA name="motif" rows=4 cols=40>Motif</TEXTAREA>
+						<div><label class="grey" for="MOTIF">Renseigner Le Motif De Votre Réclamation:</label></div>
+                      <TEXTAREA name="MOTIF" rows=4 cols=40>Motif</TEXTAREA>
 					</div>
 					<br>
 					<div>
