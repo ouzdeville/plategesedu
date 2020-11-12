@@ -1,10 +1,23 @@
-<?php
+
+ <?php
  include ("../connexionpod.php");
  ?>
- <link rel="stylesheet" href="style.css"/>
- <link rel="stylesheet" href="bootstrap.min.css">
+ <html>
+
+<head>
+    <title>Plateforme ESSA</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/essa.css" />
+</head>
+
+<body>
+    <?php
+ include ("./header.php");
+ ?>
+ 
 <div style="width:400px; margin:auto">
-<link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+
 <?php
 try
 {
@@ -14,11 +27,11 @@ try
                     <div class="row">
                  	<div>  
 					<div class="col"> 
-					<label class="grey" for="username">Entrez Le Nom De La Classe:</label>
+					<label class="grey" for="username">ENTREZ LE NOM DE LA CLASSE:</label>
 					<input class="form-control" type="text" name="classe" id="classe" value="" size="100" />
 					</div>
 					<div class="col"> 
-					<label class="grey" for="username">Entrez Le Nom De La Filière:</label>
+					<label class="grey" for="username">ENTREZ LE NOM DE LA FILIERE:</label>
 					<input class="form-control" type="text" name="nom" id="filiere" value="" size="100" />
 					</div>
 					<div>

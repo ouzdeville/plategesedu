@@ -16,7 +16,7 @@
         <th>ADRESSE</th>
         <th>TEL</th>
         <th>code</th>
-		<th>ACTION</th>
+	
       </tr>
     </thead>
     <tbody>
@@ -38,10 +38,7 @@ foreach ($resultat as $row){
         <td><?php echo $row['ADRESSE'] ; ?></td>
         <td><?php echo $row['TEL'] ; ?></td>
         <td><?php echo $row['code'] ; ?></td>
-		<td>
-		<a href="http://localhost:80/plategesedu/modifier.php?id=<?php echo $row['id'] ; ?>">
-          <span class="glyphicon glyphicon-pencil"></span> Modifier
-        </a></td>
+		
 </tr> 
 <?php
 }

@@ -1,14 +1,30 @@
- <?php
+<?php
  include ("../connexionpod.php");
  ?>
- <link rel="stylesheet" href="style.css"/>
+ <html>
+
+<head>
+    <title>Plateforme ESSA</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/essa.css" />
+</head>
+
+<body>
+    <?php
+ include ("./header.php");
+ ?>
+
+
+
+ <link rel="stylesheet" href="style.css"/>
+    
 <?php
 try
 {
 	?>
 
-<link rel="stylesheet" href="bootstrap.min.css">
+
 <div style="width:400px; margin:auto">
 	<section class="#">
 <form action="ajoutprofaction.php" method="post">

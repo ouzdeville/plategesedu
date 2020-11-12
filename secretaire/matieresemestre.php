@@ -49,7 +49,7 @@ foreach($resultat as $row) {
  <a href="matiereprof.php?idmatierepromo=<?php echo $row["id_MPRO"] ?>&NOM=<?php	echo $row["NOM"]  ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><?php	echo $row["NOM"]  ?></a>
  <?php	} ?>
  <a href="listetu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Etudiants</a>
-   <a  href="matierespromo.php?ID_PROMO=<?php echo $_GET["id_PROMO"] ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?> "  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Matières Promo</a>
+   <a  href="matierespromo.php?ID_PROMO=<?php echo $_GET["ID_PROMO"] ?>&semestre=<?php	echo $semestre  ?>&idniv=<?php echo $_GET["idniv"] ?>&annee=<?php	echo $_GET["annee"] ?> "  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liste Matières Promo</a>
   </section>
  <section class="g">
  <ul>

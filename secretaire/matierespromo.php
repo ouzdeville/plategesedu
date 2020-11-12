@@ -52,7 +52,7 @@ foreach($resultat as $row) {
   </section>
  <section class="g">
  <ul>
-   <li> <a href="ajoutmat.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AJOUTER MATIERES</a><br/></li>
+   <li> <a href="ajoutmatiere.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AJOUTER MATIERES</a><br/></li>
  <li><a href="acceuilsec.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">RETOUR</a></li>
  </ul>
  </section>

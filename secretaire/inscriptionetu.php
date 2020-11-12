@@ -1,17 +1,33 @@
 <?php
  include ("../connexionpod.php");
  ?>
- <link rel="stylesheet" href="style.css"/>
+ <html>
+
+<head>
+    <title>Plateforme ESSA</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/essa.css" />
+</head>
+
+<body>
+    <?php
+ include ("./header.php");
+ ?>
+
+
+
+ <link rel="stylesheet" href="style.css"/>
+    
 	<div style="width:400px; margin:auto">
 <?php
 try
 {
 	?>
 <form action="inscriptionetudiantaction.php" method="post">
-					<h3>ENREGISTRER UN ETUDIANT</h3>		
+					<h3>INSCRIRE UN ETUDIANT</h3>		
                    <div class="col"> 
-					<label class="grey" for="etudiant">etudiant:</label>
+					<label class="grey" for="etudiant">ETUDIANT:</label>
 					<select name="id_etudiant" id="etudiant" >
 					
 					<?php
@@ -26,7 +42,7 @@ foreach($resultat as $row) {
 					</select>
 					</div>
 					                   <div class="col"> 
-					<label class="grey" for="promo">promo:</label>
+					<label class="grey" for="promo">PROMO:</label>
 					<select name="id_promo" id="promo" >
 					
 					<?php
