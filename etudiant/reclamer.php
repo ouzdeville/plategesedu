@@ -24,7 +24,7 @@ try
 <div style="width:400px; margin:auto">
 <section class="mb">
 <form action="reclameraction.php" method="post">	
-<input class="form-control" type="int" name="ID_NOT" id="ID_NOT"  value="<?php echo $row1['ID_NOTE'] ?>" size="23" />
+<input class="form-control" type="hidden" name="ID_NOT" id="ID_NOT"  value="<?php echo $_GET['ID_NOTE'] ?>" size="23" />
                     <div class="row">
                  	</div>  
 					<br>

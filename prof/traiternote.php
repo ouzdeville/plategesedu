@@ -11,14 +11,14 @@
   ON DUPLICATE KEY UPDATE
 VALEUR='$value'";
   $resultat=$connexion->query($requete);
-  echo $requete."<br/>";
+ // echo $requete."<br/>";
 	  }
 
   }
 //$resultat=$connexion->query($requete);
 //echo $requete;
 
- header("Location:saisienote.php?eval=".$_GET["eval"]."&ideve=".$_GET["ID_EVE"]."&NOM=".$_GET["NOM"]."&semestre=".$_GET["semestre"]."&classe=".$_GET["classe"]."&idmatierepromo=".$_GET["idmatierepromo"]);
+ header("Location:saisienote.php?eval=".$_GET["eval"]."&ideve=".$_GET["ideve"]."&NOM=".$_GET["NOM"]."&semestre=".$_GET["semestre"]."&classe=".$_GET["classe"]."&idmatierepromo=".$_GET["idmatierepromo"]);
 
 
 
