@@ -18,7 +18,7 @@ VALEUR='$value'";
 //$resultat=$connexion->query($requete);
 //echo $requete;
 
- header("Location:saisienote.php?eval=Devoir-1&ideve=1&NOM=Algorithme&semestre=1&classe=Licence%201%20/INFORMATIQUE&idmatierepromo=1");
+ header("Location:saisienote.php?eval=".$_GET["eval"]."&ideve=".$_GET["ID_EVE"]."&NOM=".$_GET["NOM"]."&semestre=".$_GET["semestre"]."&classe=".$_GET["classe"]."&idmatierepromo=".$_GET["idmatierepromo"]);
 
 
 
