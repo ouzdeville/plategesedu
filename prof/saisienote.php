@@ -16,7 +16,7 @@
   ?>
     <h2> <?php	echo $_GET["classe"]?></h2>
     <h3> <?php	echo $_GET["eval"]."/".$_GET["NOM"] ."/"."Semestre ".$_GET["semestre"]?></h3>
-    <form action="traiternote.php" method="post">
+    <form action="traiternote.php?eval=<?php echo $_GET["eval"]?>&ideve=<?php echo $_GET["ID_EVE"] ?>&NOM=<?php	echo $_GET["NOM"]  ?>&semestre=<?php	echo $_GET["semestre"]  ?>&classe=<?php	echo $_GET["classe"]?>&idmatierepromo=<?php echo $_GET["idmatierepromo"] ?>" method="post">
         <input type="hidden" name="ID_EVE" value="<?php echo $_GET["ideve"] ?>" />
         <input type="hidden" name="ID_MPRO" value="<?php echo $_GET["idmatierepromo"] ?>" />
         <table class="table">
