@@ -2,12 +2,23 @@
 
  include ("../connexionpod.php");
   //$id_promo=$_POST["id_promo"];
-  $requete="insert into notes (id_NOT,ID_ETUPRO,ID_EVE,ID_MPRO,VALEUR) 
-  values ('".$_POST['id_NOT']."','".$_POST['ID_ETUPRO']."','".$_POST['ID_EVE']."','".$_POST['ID_MPRO']."','".$_POST['VALEUR']."')";
-$resultat=$connexion->query($requete);
-echo $requete;
+ 
+  foreach($_POST as $key=>$value){
+	  if ($key!="ID_EVE" && $key!="ID_MPRO"){
+		  
+		   $requete="insert into notes (id_NOT,ID_ETUPRO,ID_EVE,ID_MPRO,VALEUR) 
+  values (0,$key,'".$_POST['ID_EVE']."','".$_POST['ID_MPRO']."',$value)
+  ON DUPLICATE KEY UPDATE
+VALEUR='$value'";
+  $resultat=$connexion->query($requete);
+  echo $requete."<br/>";
+	  }
 
- //header("Location:saisienote.php");
+  }
+//$resultat=$connexion->query($requete);
+//echo $requete;
+
+ header("Location:saisienote.php?eval=Devoir-1&ideve=1&NOM=Algorithme&semestre=1&classe=Licence%201%20/INFORMATIQUE&idmatierepromo=1");
 
 
 
