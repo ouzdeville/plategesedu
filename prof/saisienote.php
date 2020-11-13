@@ -27,6 +27,7 @@
                     <th>Prénom</th>
                     <th>Tel</th>
                     <th>Notes</th>
+                    <th>Réclamations</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,6 +65,20 @@
                                 <?php if ($row1) echo $row1['VALEUR'];
                                 else echo "00.00" ?>
                                 " size="5" />
+                    </td>
+                    <td>
+                        <?php
+                                  //recupérer la réclamation
+                             if ($row1){
+                            $request="SELECT r.* FROM reclamation r
+                            WHERE r.ID_NOT= '".$row1["id_NOT"]."' order by id_REC desc";
+                            $resultReclam=$connexion->query($request);
+                            $rowtReclam  = $resultReclam -> fetch();
+                        }
+                        if ($rowtReclam)
+                        echo $rowtReclam["MOTIF"];
+                        ?>
+                        
                     </td>
                 </tr>
                 <?php
